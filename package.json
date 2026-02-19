@@ -1,0 +1,37 @@
+{
+  "name": "refund_agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node --env-file=.env filecheker.js",
+    "scrape": "node --loader ts-node/esm webscriping.js",
+    "playwright:run": "node webscriping.js",
+    "test:scrape": "node webscriping.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.29.1",
+    "@google/generative-ai": "^0.24.1",
+    "@langchain/core": "^1.0.3",
+    "@langchain/groq": "^1.0.0",
+    "axios": "^1.13.5",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "langchain": "^1.0.3",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.10",
+    "openai": "^6.22.0",
+    "pdf-parse": "^2.4.5",
+    "playwright": "^1.56.1",
+    "xlsx": "^0.18.5",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3"
+  }
+}
